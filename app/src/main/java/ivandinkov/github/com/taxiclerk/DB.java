@@ -25,7 +25,9 @@ class DB extends SQLiteOpenHelper {
 	/** The Constant TAG. */
 	private static final String TAG = "TC";
 	
-	
+	/**
+	 * Provider table
+	 */
 	private static final String TABLE_PROVIDER = "provider";
 	private static final String KEY_ID = "id";
 	private static final String KEY_PROVIDER_NAME = "name";
@@ -36,7 +38,9 @@ class DB extends SQLiteOpenHelper {
 					+ "(" + KEY_ID + " INTEGER PRIMARY KEY,"
 					+ KEY_PROVIDER_NAME + " TEXT,"
 					+ KEY_PR_ACTIVE + " TEXT)";
-	
+	/**
+	 * Expense type table
+	 */
 	private static final String TABLE_EXPENSE_TYPE = "expense_type";
 	private static final String KEY_ID_EXPENSE_TYPE = "id";
 	private static final String KEY_EXPENSE_TYPE_NAME = "expense_type_name";
@@ -47,7 +51,9 @@ class DB extends SQLiteOpenHelper {
 					+ "(" + KEY_ID_EXPENSE_TYPE + " INTEGER PRIMARY KEY,"
 					+ KEY_EXPENSE_TYPE_NAME + " TEXT,"
 					+ KEY_EXPENSE_TYPE_ACTIVE + " TEXT)";
-	
+	/**
+	 * Expenses table
+	 */
 	private static final String TABLE_EXPENSE = "expense";
 	private static final String KEY_ID_EXPENSE = "id";
 	private static final String KEY_EXP_DATE = "expense_date";
@@ -66,7 +72,9 @@ class DB extends SQLiteOpenHelper {
 					+ KEY_EXP_NOTES + " TEXT,"
 					+ KEY_EXP_IMG + " TEXT,"
 					+ KEY_EXP_PROVIDER + " TEXT)";
-	
+	/**
+	 * Income table
+	 */
 	private static final String TABLE_INCOME = "income";
 	private static final String KEY_ID_INCOME = "id";
 	private static final String KEY_INC_DATE = "income_date";
@@ -84,6 +92,22 @@ class DB extends SQLiteOpenHelper {
 					+ KEY_INC_NOTES + " TEXT,"
 					+ KEY_INC_PROVIDER + " TEXT)";
 	
+	/** Time tracker table*/
+	private  static final String TABLE_TIME = "time_tracker";
+	private  static final String KEY_ID_TIME = "id";
+	private  static final String KEY_TM_SHIFT_ID = "shift_id";
+	private  static final String KEY_TM_SHIFT_ON = "shift_on";
+	private  static final String KEY_TM_TIME_START = "time_start";
+	private  static final String KEY_TM_TIME_FINISH = "time_finish";
+	
+	/** The Constant CREATE_TIME_TABLE. */
+	private static final String CREATE_TIME_TABLE = "CREATE TABLE IF NOT EXISTS "
+					+ TABLE_TIME
+					+ "(" + KEY_ID_TIME + " INTEGER PRIMARY KEY,"
+					+ KEY_TM_SHIFT_ID + " TEXT,"
+					+ KEY_TM_SHIFT_ON + " INTEGER,"
+					+ KEY_TM_TIME_START + " TEXT,"
+					+ KEY_TM_TIME_FINISH + " TEXT)";
 	
 	
 	private Cursor cursor;
@@ -219,7 +243,7 @@ class DB extends SQLiteOpenHelper {
 	
 	/**
 	 *
-	 *  EXPENSE TYPES
+	 *  EXPENSES
 	 *
 	 */
 	/** Save provider*/

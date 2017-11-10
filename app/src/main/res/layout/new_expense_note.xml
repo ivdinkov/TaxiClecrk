@@ -19,7 +19,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/ten_dp"
                 android:text="Note"
-                android:textColor="@color/dark_blue"/>
+                android:textColor="@color/colorDarkBlue"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -32,7 +32,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Note"
-                android:textColor="@color/dark_blue"/>
+                android:textColor="@color/colorDarkBlue"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -47,7 +47,7 @@
                 android:layout_height="wrap_content"
                 android:text="SAVE"
                 android:textAlignment="textEnd"
-                android:textColor="@color/dark_blue"/>
+                android:textColor="@color/colorDarkBlue"/>
 
             <TextView
                 android:id="@+id/txtCancelNewNote"
@@ -57,7 +57,7 @@
                 android:layout_marginRight="@dimen/ten_dp"
                 android:text="CANCEL"
                 android:textAlignment="textEnd"
-                android:textColor="@color/dark_blue"/>
+                android:textColor="@color/colorDarkBlue"/>
         </LinearLayout>
     </LinearLayout>
 

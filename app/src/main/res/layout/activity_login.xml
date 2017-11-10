@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="20"
-        android:background="@color/register_blue"
+        android:background="@color/colorRegisterBlue"
         android:orientation="horizontal">
     </LinearLayout>
 
@@ -20,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="10"
-        android:background="@color/register_blue"
+        android:background="@color/colorRegisterBlue"
         android:orientation="horizontal">
 
         <TextView
@@ -32,7 +32,7 @@
             android:fontFamily="sans-serif"
             android:gravity="center"
             android:text="Login"
-            android:textColor="@color/white"
+            android:textColor="@color/colorWhite"
             android:textSize="@dimen/register_title_text_size"/>
     </LinearLayout>
 
@@ -86,7 +86,7 @@
             android:background="@drawable/register_button"
             android:gravity="center"
             android:text="Login"
-            android:textColor="@color/white"/>
+            android:textColor="@color/colorWhite"/>
 
         <TextView
             android:id="@+id/txtViewRegister"
