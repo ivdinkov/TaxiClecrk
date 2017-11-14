@@ -3,11 +3,15 @@
     <color name="colorPrimary">#AAAAAA</color>
     <color name="colorTextGray">#333333</color>
     <color name="colorPrimaryDark">#555555</color>
-    <color name="light_blue">#a1c2ff</color>
-    <color name="white">#ffffff</color>
-    <color name="btn_register_color">#7197de</color>
-    <color name="register_blue">#2d3035</color>
-    <color name="blue_drawer">#a63a5381</color>
-    <color name="pager_bg_blue">#5877b1</color>
-    <color name="dark_blue">#004e6b</color>
+    <color name="colorLightBlue">#a1c2ff</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorButtonRegister">#7197de</color>
+    <color name="colorRegisterBlue">#2d3035</color>
+    <color name="colorBlueDrawer">#a63a5381</color>
+    <color name="colorPagerBgBlue">#5877b1</color>
+    <color name="colorDarkBlue">#004e6b</color>
+    <color name="colorGreen">#00ff2a</color>
+    <color name="colorRed">#ff0000</color>
+    <color name="colorMainYellow">#ffb700</color>
 </resources>
+

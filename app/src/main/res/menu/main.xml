@@ -13,4 +13,9 @@
         android:orderInCategory="100"
         android:title="New Expense"
         app:showAsAction="always"/>
+    <item
+        android:id="@+id/switchID"
+        app:actionLayout="@layout/toggle_switch"
+        android:title="On/Off Shift"
+        app:showAsAction="always"/>
 </menu>

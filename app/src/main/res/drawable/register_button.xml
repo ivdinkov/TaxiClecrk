@@ -2,7 +2,7 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item>
         <shape>
-            <solid android:color="@color/register_blue" />
+            <solid android:color="@color/colorRegisterBlue" />
             <corners android:radius="@dimen/register_button_radius" />
         </shape>
     </item>

@@ -14,7 +14,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="top"
-            android:background="@color/pager_bg_blue"
+            android:background="@color/colorPagerBgBlue"
             android:paddingBottom="5dp"
             android:paddingTop="5dp"
             android:textColor="#FFF">

@@ -59,7 +59,7 @@
                     android:layout_marginLeft="@dimen/trezerodp"
                     android:layout_weight="50"
                     android:text="Cash"
-                    android:textColor="@color/register_blue"
+                    android:textColor="@color/colorRegisterBlue"
                     android:textSize="18sp"/>
 
                 <RadioButton
@@ -69,7 +69,7 @@
                     android:layout_weight="50"
                     android:checked="true"
                     android:text="Account"
-                    android:textColor="@color/register_blue"
+                    android:textColor="@color/colorRegisterBlue"
                     android:textSize="18sp"/>
 
             </RadioGroup>

@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
-              android:background="@color/white"
+              android:background="@color/colorWhite"
               android:orientation="vertical">
 
 
@@ -12,7 +12,7 @@
         android:layout_height="0dp"
         android:layout_weight="0.25"
         android:text="Add Expense"
-        android:textColor="@color/dark_blue"/>
+        android:textColor="@color/colorDarkBlue"/>
 
     <EditText
         android:id="@+id/txtExpenseType"
@@ -39,7 +39,7 @@
             android:layout_weight="0.6"
             android:text="SAVE"
             android:textAlignment="textEnd"
-            android:textColor="@color/dark_blue"/>
+            android:textColor="@color/colorDarkBlue"/>
 
         <TextView
             android:id="@+id/btnCancelExpenseType"
@@ -50,7 +50,7 @@
             android:layout_weight="0.4"
             android:text="CANCEL"
             android:textAlignment="textEnd"
-            android:textColor="@color/dark_blue"/>
+            android:textColor="@color/colorDarkBlue"/>
     </LinearLayout>
 
 </LinearLayout>
