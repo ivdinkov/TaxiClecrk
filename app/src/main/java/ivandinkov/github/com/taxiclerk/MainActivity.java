@@ -1,6 +1,7 @@
 package ivandinkov.github.com.taxiclerk;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
@@ -13,16 +14,21 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.SwitchCompat;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.LinearLayout;
+import android.widget.CompoundButton;
 import android.widget.Toast;
 
 import com.facebook.stetho.Stetho;
 import com.google.firebase.auth.FirebaseAuth;
+
+import java.security.SecureRandom;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity
 				implements NavigationView.OnNavigationItemSelectedListener,
@@ -44,6 +50,10 @@ public class MainActivity extends AppCompatActivity
 {
 	private static final String TAG = "TC";
 	private FirebaseAuth firebaseAuth;
+	private String[] navMenuTitles;
+	public static final String tc_prefs = "shift_state";
+	private SharedPreferences sharedPreferences;
+	private SwitchCompat timeSwitch;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -68,8 +78,21 @@ public class MainActivity extends AppCompatActivity
 		if (savedInstanceState == null) {
 			// on first time display view for first nav item
 			displayView(1);
+			
 		}
 		
+		// load nav menu titles
+		navMenuTitles = getResources().getStringArray(R.array.nav_bar_titles);
+		if (readShiftState().compareTo("on") == 0) {
+			setTitle(navMenuTitles[1]);
+		} else {
+			setTitle(navMenuTitles[2]);
+		}
+	}
+	
+	private String readShiftState() {
+		sharedPreferences = getSharedPreferences(tc_prefs, this.MODE_PRIVATE);
+		return sharedPreferences.getString("shift", "");
 	}
 	
 	private void displayView(int position) {
@@ -173,7 +196,83 @@ public class MainActivity extends AppCompatActivity
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
+		// initialize switch
+		timeSwitch = (SwitchCompat) menu.findItem(R.id.switchID).getActionView().findViewById(R.id.switchCompat);
+		if (readShiftState().compareTo("on") == 0) {
+			timeSwitch.setChecked(true);
+		} else {
+			timeSwitch.setChecked(false);
+		}
+		
+		timeSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+			@Override
+			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+				if (timeSwitch.isChecked()) {
+					// change title
+					setTitle(navMenuTitles[1]);
+					// save to shared prefs
+					savePrefs("shift", "on");
+					// start new shift and update the DB
+					startNewShift(generateNewShiftId(), getCurrentTime());
+				} else {
+					// change title
+					setTitle(navMenuTitles[2]);
+					// save to shared prefs
+					savePrefs("shift", "off");
+					// end shift and update end shift time  in the DB
+					endCurrentShift(readShiftId(), getCurrentTime());
+				}
+			}
+		});
 		return true;
+	}
+	
+	private void endCurrentShift(String shiftId, String currentTime) {
+		// end current shift and update the DB
+		DB db = new DB(this, null);
+		db.updateShift(shiftId, currentTime);
+		// update shiftId in sharedPrefs
+		savePrefs("shiftId", "0");
+		db.close();
+	}
+	
+	private void startNewShift(String shiftId, String currentTime) {
+		// save the new shift in DB
+		DB db = new DB(this, null);
+		if (db.startNewShift(shiftId, currentTime)) {
+			// new shift create success => save shiftId to sharedPrefs
+			savePrefs("shiftId", shiftId);
+		} else {
+			Log.d(TAG, "Was unable to save the new shift");
+		}
+		db.close();
+	}
+	
+	private String getCurrentTime() {
+		final Calendar c = Calendar.getInstance();
+		int year = c.get(Calendar.YEAR);
+		int month = c.get(Calendar.MONTH);
+		int day = c.get(Calendar.DAY_OF_MONTH);
+		c.set(year, month, day);
+		
+		SimpleDateFormat sdfDB = new SimpleDateFormat("ddMMyyyyHHmm", Locale.ENGLISH);
+		
+		return sdfDB.format(c.getTime()).toString();
+	}
+	
+	private String generateNewShiftId() {
+		final String AB = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ0123465798abcdefghijklmnopqrstuvwxyz";
+		SecureRandom rnd = new SecureRandom();
+		int len = 20;
+		StringBuilder sb = new StringBuilder(len);
+		for (int i = 0; i < len; i++)
+			sb.append(AB.charAt(rnd.nextInt(AB.length())));
+		return sb.toString();
+	}
+	
+	private String readShiftId() {
+		sharedPreferences = getSharedPreferences(tc_prefs, this.MODE_PRIVATE);
+		return sharedPreferences.getString("shiftId", "");
 	}
 	
 	@Override
@@ -183,15 +282,13 @@ public class MainActivity extends AppCompatActivity
 		// as you specify a parent activity in AndroidManifest.xml.
 		int id = item.getItemId();
 		
-		//noinspection SimplifiableIfStatement
 		if (id == R.id.add_job) {
 			FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
 			Fragment fragment = new NewIncomeFragment();
 			ft.setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left);
 			ft.replace(R.id.main_fragment_container, fragment, "new fare").commit();
 			return true;
-		}
-		else if(id == R.id.add_expense){
+		} else if (id == R.id.add_expense) {
 			FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
 			Fragment fragment = new NewExpenseFragment();
 			ft.setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left);
@@ -236,4 +333,23 @@ public class MainActivity extends AppCompatActivity
 		
 	}
 	
+	@Override
+	public void setTitle(CharSequence title) {
+		getSupportActionBar().setTitle(title);
+	}
+	
+	@Override
+	protected void onStop() {
+		super.onStop();
+		// save shift status
+		savePrefs("shift", readShiftState());
+		savePrefs("shiftId", readShiftId());
+	}
+	
+	
+	private void savePrefs(String key, String value) {
+		SharedPreferences.Editor editor = sharedPreferences.edit();
+		editor.putString(key, value);
+		editor.apply();
+	}
 }

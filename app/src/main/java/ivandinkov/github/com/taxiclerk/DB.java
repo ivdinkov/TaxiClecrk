@@ -96,19 +96,15 @@ class DB extends SQLiteOpenHelper {
 	private  static final String TABLE_TIME = "time_tracker";
 	private  static final String KEY_ID_TIME = "id";
 	private  static final String KEY_TM_SHIFT_ID = "shift_id";
-	private  static final String KEY_TM_SHIFT_ON = "shift_on";
 	private  static final String KEY_TM_TIME_START = "time_start";
 	private  static final String KEY_TM_TIME_FINISH = "time_finish";
-	
 	/** The Constant CREATE_TIME_TABLE. */
 	private static final String CREATE_TIME_TABLE = "CREATE TABLE IF NOT EXISTS "
 					+ TABLE_TIME
 					+ "(" + KEY_ID_TIME + " INTEGER PRIMARY KEY,"
 					+ KEY_TM_SHIFT_ID + " TEXT,"
-					+ KEY_TM_SHIFT_ON + " INTEGER,"
 					+ KEY_TM_TIME_START + " TEXT,"
 					+ KEY_TM_TIME_FINISH + " TEXT)";
-	
 	
 	private Cursor cursor;
 	
@@ -124,6 +120,7 @@ class DB extends SQLiteOpenHelper {
 			db.execSQL(CREATE_EXPENSE_TYPE_TABLE);
 			db.execSQL(CREATE_EXPENSE_TABLE);
 			db.execSQL(CREATE_INCOME_TABLE);
+			db.execSQL(CREATE_TIME_TABLE);
 		} catch (Exception e) {
 			Log.e(TAG, "DB onCreate: ", e);
 		}
@@ -136,13 +133,49 @@ class DB extends SQLiteOpenHelper {
 			db.execSQL("DROP TABLE IF EXISTS " + TABLE_EXPENSE_TYPE);
 			db.execSQL("DROP TABLE IF EXISTS " + TABLE_EXPENSE);
 			db.execSQL("DROP TABLE IF EXISTS " + TABLE_INCOME);
+			db.execSQL("DROP TABLE IF EXISTS " + TABLE_TIME);
 		} catch (Exception e) {
 			Log.e(TAG, "DB onUpgrade: ", e);
 		}
 		// Create tables again
 		onCreate(db);
 	}
+	/**
+	 *
+	 * TIME
+	 *
+	 */
 	
+	public boolean startNewShift(String shiftId, String startTime){
+		SQLiteDatabase db = this.getWritableDatabase();
+		
+		ContentValues values = new ContentValues();
+		values.put(KEY_TM_SHIFT_ID, shiftId);
+		values.put(KEY_TM_TIME_START,startTime);
+		values.put(KEY_TM_TIME_FINISH,"");
+		
+		try {
+			long success = db.insert(TABLE_TIME, null, values);
+			db.close();
+			if(success != -1){
+				return true;
+			}
+		}catch(Exception e){
+			Log.e(TAG, "DB startShift: ", e);
+		}
+		return false;
+	}
+	
+	public void updateShift(String shiftId, String finishTime) {
+		
+		SQLiteDatabase db = this.getWritableDatabase();
+		ContentValues values = new ContentValues();
+		
+		values.put(KEY_TM_TIME_FINISH, finishTime);
+		
+		db.update(TABLE_TIME, values, KEY_TM_SHIFT_ID + " = ?", new String[] { String.valueOf(shiftId) });
+		db.close();
+	}
 	/**
 	 *
 	 *  PROVIDERS
@@ -243,9 +276,9 @@ class DB extends SQLiteOpenHelper {
 	
 	/**
 	 *
-	 *  EXPENSES
+	 * EXPENSES
 	 *
-	 */
+	 * */
 	/** Save provider*/
 	public boolean insertExpenseType(Expense expense){
 		SQLiteDatabase db = this.getWritableDatabase();

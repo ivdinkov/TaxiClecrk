@@ -6,10 +6,13 @@
     android:orientation="horizontal" >
 
     <android.support.v7.widget.SwitchCompat
-        android:layout_width="60dp"
+        android:id="@+id/switchCompat"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:id="@+id/switchCompat"/>
+        android:checked="false"
+        android:padding="@dimen/ten_dp"
+        android:theme="@style/SwitchCompatTheme"/>
 
 </RelativeLayout>

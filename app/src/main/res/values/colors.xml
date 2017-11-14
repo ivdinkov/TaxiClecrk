@@ -10,7 +10,8 @@
     <color name="colorBlueDrawer">#a63a5381</color>
     <color name="colorPagerBgBlue">#5877b1</color>
     <color name="colorDarkBlue">#004e6b</color>
-    <color name="colorGreen">#009919</color>
+    <color name="colorGreen">#00ff2a</color>
     <color name="colorRed">#ff0000</color>
+    <color name="colorMainYellow">#ffb700</color>
 </resources>
 
