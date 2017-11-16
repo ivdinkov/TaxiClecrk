@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2014. Small-app.com
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="270dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center|top"
+    android:layout_marginTop="80dp"
+    android:background="#555555"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="270dp"
+        android:layout_height="65dp"
+        android:alpha="90"
+        android:background="@drawable/lower_border_blue"
+        android:gravity="center|center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/dlgDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/blue"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@drawable/separetor_05"
+        android:layout_width="270dp"
+        android:layout_height="150dp"
+        android:background="@drawable/lower_border_white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txtDialogMsg1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/txt_color_gray"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/btnDialogYes"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="OK"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/btnDialogNo"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/left_border_white"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

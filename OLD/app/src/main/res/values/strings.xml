@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2014. Small-app.com
+  -->
+
+<resources>
+
+    <string name="app_name">Taxi Clerk</string>
+    <string name="btnLogin_text">LOGIN</string>
+    <string name="btnRegister_text">REGISTER</string>
+    <string name="login_label">ENTER YOUR PIN</string>
+    <string name="email_label">EMAIL</string>
+    <string name="fname_label">FULL NAME</string>
+    <string name="pin_label">FIVE DIGIT PIN</string>
+    <string name="search">SEARCH</string>
+    <string name="generate">GENERATE</string>
+    <string name="change_pin">CHANGE</string>
+    <string name="send">SEND</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    <string name="action_settings">Setting</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="terms">Yes I agree with the terms and conditions</string>
+    <string name="cash">Cash</string>
+    <string name="card">Card</string>
+    <string name="acc">Bank Acc</string>
+    <string name="odometar">Odometar reading</string>
+    <string name="lblHours">Hours</string>
+    <string name="lblAmount">Amount</string>
+    <string name="lblOdo">Odometar</string>
+    <string name="btnSave">Save</string>
+    <string name="btnCancel">Cancel</string>
+    <string name="btnNewIncome">New Income</string>
+    <string name="new_income">Enter new Income</string>
+    <string name="new_expense">Enter new Expense</string>
+    <string name="new_hours">New Shift Time</string>
+    <string name="inc_acc">Account</string>
+    <string name="home_today">Today</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="delete">Deleting Record</string>
+    <string name="save_phone">Save to Phone</string>
+    <string name="send_email">Send to EMAIL</string>
+    <string name="feedback_email">feedback@small-app.com</string>
+    <string name="expense_prompt">Select expense</string>
+    <string name="all_zeros">00000.00</string>
+    <string name="euro_sign">&#8364;</string>
+    <string name="gross_income">Gross Income</string>
+    <string name="jobs">Jobs</string>
+    <string name="hr">Hr</string>
+    <string name="euro_per_hr">&#8364;/Hr</string>
+    <string name="account">Account</string>
+    <string name="expenses">Expenses</string>
+    <string name="net_income">Net Income</string>
+    <string name="zero">0.00</string>
+    <string name="zero1">0</string>
+    <string name="total_jobs">Total Jobs</string>
+    <string name="hours_total">Hours Total</string>
+    <string name="income_total">Income Total</string>
+    <string name="street">Street</string>
+    <string name="expense_total">Expense Total</string>
+    <string name="diesel">Diesel</string>
+    <string name="maintenance">Maintenance</string>
+    <string name="insurance">Insurance</string>
+    <string name="base">Base</string>
+    <string name="phone">Phone</string>
+    <string name="misc">Misc</string>
+    <string name="mileage">Mileage</string>
+    <string name="mileage_start">Start Mileage</string>
+    <string name="mileage_run">Mileage Run</string>
+    <string name="report">R E P O R T</string>
+    <string name="choose_pin">Choose 5 Digit PIN</string>
+    <string name="your_email">Your Email</string>
+    <string name="banner_ad_unit_id">ca-app-pub-2134558196159159/5895475823</string>
+
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Home</item>
+        <item>Jobs</item>
+        <item>Expenses</item>
+        <item>Hours</item>
+        <item>Reports</item>
+        <item>Settings</item>
+        <item>Logout</item>
+    </string-array>
+    <string-array name="expense_type">
+        <item>Diesel</item>
+        <item>Maintenance</item>
+        <item>Insurance</item>
+        <item>Base</item>
+        <item>Phone</item>
+        <item>Misc</item>
+    </string-array>
+    <string-array name="expense_type_report">
+        <item>All</item>
+        <item>Diesel</item>
+        <item>Maintenance</item>
+        <item>Insurance</item>
+        <item>Base</item>
+        <item>Phone</item>
+        <item>Misc</item>
+    </string-array>
+    <string-array name="week_days">
+        <item>M</item>
+        <item>T</item>
+        <item>W</item>
+        <item>T</item>
+        <item>F</item>
+        <item>S</item>
+        <item>S</item>
+    </string-array>
+    <string-array name="month_names">
+        <item>J</item>
+        <item>F</item>
+        <item>M</item>
+        <item>A</item>
+        <item>M</item>
+        <item>J</item>
+        <item>J</item>
+        <item>A</item>
+        <item>S</item>
+        <item>O</item>
+        <item>N</item>
+        <item>D</item>
+    </string-array>
+    <string-array name="home_fragment_names">
+        <item>TODAY</item>
+        <item>WEEK</item>
+        <item>YEAR</item>
+    </string-array>
+    
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_income">Income</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+</resources>

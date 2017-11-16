@@ -1,0 +1,51 @@
+<!--
+  ~ Copyright (c) 2014. Small-app.com
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#555555"
+    android:orientation="vertical"
+    android:gravity="center|top" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="No Records"
+        android:textColor="@color/txt_color_gray"
+        android:textSize="45sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="for a new record press"
+        android:textColor="@color/txt_color_gray"
+        android:textSize="25sp"
+         />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_red_euro" />
+
+
+    <LinearLayout
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="1dp"
+            android:divider="#777777"
+            android:dividerHeight="0.1dp"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2014. Small-app.com
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#555555"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txtChangePin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Job Provider"
+                android:textColor="@color/txt_color_gray"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/separetor_05" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txtDialogEuro"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="1"
+                android:textColor="@color/txt_color_gray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtProv1ToUpdate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="20"
+                android:text="Street"
+                android:textColor="@color/txt_color_gray"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/btnDialogYes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2"
+                android:textColor="@color/txt_color_gray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/txtProv2ToUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#555555"
+                    android:inputType="text"
+                    android:text=""
+                    android:textColor="@color/txt_color_gray"
+                    android:textSize="22sp" />
+
+                <EditText
+                    android:id="@+id/baseToUpdate2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/edittext_login_box_base" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnAddJobPr2ToUpdate"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="3"
+                android:background="@drawable/btn_gray"
+                android:text="Update" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/btnDialogNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="3"
+                android:textColor="@color/txt_color_gray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/txtProv3ToUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#555555"
+                    android:inputType="text"
+                    android:text=""
+                    android:textColor="@color/txt_color_gray"
+                    android:textSize="22sp" />
+
+                <EditText
+                    android:id="@+id/baseToUpdate3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="3dp"
+                    android:background="@drawable/edittext_login_box_base" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnAddJobPr3ToUpdate"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="3"
+                android:background="@drawable/btn_gray"
+                android:text="Update" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnFinishJobPrToUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_yellow"
+            android:text="FINISH"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

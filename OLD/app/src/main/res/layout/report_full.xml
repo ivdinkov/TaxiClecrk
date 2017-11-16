@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2014. Small-app.com
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:gravity="top"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="right" >
+
+            <TextView
+                android:id="@+id/txtStartDateFullReport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="Start"
+                android:textColor="@color/txt_color_gray"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnPickStartDateFullReport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_kalendar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="right" >
+
+            <TextView
+                android:id="@+id/txtEndDateFullReport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="End"
+                android:textColor="@color/txt_color_gray"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnPickEndDateFullReport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_kalendar" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/rdSavePhone"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/save_phone"
+                android:textColor="@color/txt_color_gray"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rdSendEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="left"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:text="@string/send_email"
+                android:textColor="@color/txt_color_gray"
+                android:textSize="20sp" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/txtReportEmail"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/bg_gray"
+            android:ems="10"
+            android:hint="Email to be sent to"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/txt_color_gray"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtBaseFullReport"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@drawable/edittext_login_box_base"
+            android:clickable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="none" />
+
+        <Button
+            android:id="@+id/btnGenerateFullReport"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/btn_yellow"
+            android:text="@string/generate"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

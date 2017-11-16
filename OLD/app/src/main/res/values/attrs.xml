@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ColorOptionsView">
+        <attr name="titleText" format="string" localization="suggested" />
+        <attr name="valueColor" format="color" />
+    </declare-styleable>
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_green_euro</item>
+        <item>@drawable/ic_red_euro</item>
+        <item>@drawable/ic_time</item>
+        <item>@drawable/ic_report</item>
+        <item>@drawable/ic_settings</item>
+        <item>@drawable/ic_exit</item>
+    </array>
+</resources>
+<!-- Nav Drawer List Item Icons -->
+<!-- Keep them in order as the titles are in -->

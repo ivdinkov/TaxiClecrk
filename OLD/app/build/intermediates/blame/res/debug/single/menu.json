@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\menu\\register.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\menu\\register.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\menu\\income.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\menu\\income.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\menu\\set_active.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\menu\\set_active.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\menu\\global.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\menu\\global.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\menu\\main.xml"
+    }
+]

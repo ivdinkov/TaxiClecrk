@@ -48,6 +48,10 @@ public class DayFragment extends Fragment {
 	private TextView txtAmountCashJobs;
 	DecimalFormat dec = new DecimalFormat("0.00");
 	private int allJobsForDay;
+	private TextView txtAmountHours;
+	private TextView txtAmountMiles;
+	private TextView txtTodayDate;
+	private SimpleDateFormat dayFormat;
 	
 	public DayFragment() {
 		// Required empty public constructor
@@ -94,11 +98,15 @@ public class DayFragment extends Fragment {
 		lpWrapper.leftMargin = (dm.widthPixels - (int) (dm.widthPixels * 0.8)) / 2;
 		lpWrapper.rightMargin = (dm.widthPixels - (int) (dm.widthPixels * 0.8)) / 2;
 		
+		txtTodayDate = (TextView) view.findViewById(R.id.txtTodayDate);
 		txtAmountDayJobs = (TextView) view.findViewById(R.id.txtDayJobs);
-		txtAmountCashJobs = (TextView) view.findViewById(R.id.txtCash);
-		txtAmountAccJobs = (TextView) view.findViewById(R.id.txtAccount);
-		txtAmountExpenses = (TextView) view.findViewById(R.id.txtExpenses);
+		txtAmountHours = (TextView) view.findViewById(R.id.txtTodayHours);
+		txtAmountMiles = (TextView) view.findViewById(R.id.txtTodayMiles);
+		txtAmountCashJobs = (TextView) view.findViewById(R.id.txtTodayCash);
+		txtAmountAccJobs = (TextView) view.findViewById(R.id.txtTodayAccount);
+		txtAmountExpenses = (TextView) view.findViewById(R.id.txtTodayExpenses);
 		
+		txtTodayDate.setText(getTodayDate());
 		// Extract DB data
 		DB db = new DB(getContext(), null);
 		// day cash
@@ -107,7 +115,7 @@ public class DayFragment extends Fragment {
 			float in = Float.parseFloat(c);
 			txtAmountCashJobs.setText(dec.format(in));
 		}
-		// dat account
+		// day account
 		String a = db.getDayAmount(getDate(), "Account");
 		if (!a.isEmpty()) {
 			float in = Float.parseFloat(a);
@@ -175,6 +183,21 @@ public class DayFragment extends Fragment {
 		sdfDB = new SimpleDateFormat("ddMMyyyy", Locale.ENGLISH);
 		
 		return sdfDB.format(c.getTime());
+	}
+	
+	/**
+	 * Get today date.
+	 */
+	private String getTodayDate() {
+		final Calendar c = Calendar.getInstance();
+		int year = c.get(Calendar.YEAR);
+		int month = c.get(Calendar.MONTH);
+		int day = c.get(Calendar.DAY_OF_MONTH);
+		c.set(year, month, day);
+		
+		dayFormat = new SimpleDateFormat("EEE,  d - MMM", Locale.ENGLISH);
+		
+		return dayFormat.format(c.getTime());
 	}
 	
 	/**

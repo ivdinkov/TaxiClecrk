@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2014. Small-app.com
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:layout_margin="30dp"
+        android:layout_gravity="top|center"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/loginPin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="80dp"
+            android:background="@color/bg_gray"
+            android:hint="ENTER YOUR PIN"
+            android:inputType="number"
+            android:maxLength="5"
+            android:password="true"
+            android:textColor="@color/login_label_color"
+            android:textSize="20sp" 
+            />
+
+        <EditText
+            android:id="@+id/loginBase"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/edittext_login_box_base" 
+            android:inputType="none"
+            android:clickable="false"
+            android:focusableInTouchMode="false"/>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_yellow"
+            android:text="LOGIN"
+            android:textSize="21sp" />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/app_name"
+            android:id="@+id/app_name"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/v_15" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="v1.0"
+            android:id="@+id/version_number"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/v_15" />
+    </LinearLayout>
+
+</LinearLayout>

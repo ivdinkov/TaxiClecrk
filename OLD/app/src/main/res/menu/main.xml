@@ -1,0 +1,29 @@
+<!--
+  ~ Copyright (c) 2014. Small-app.com
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.taxibook.MainActivity" >
+
+    <item
+        android:id="@+id/add_job"
+        android:icon="@drawable/ic_green_euro"
+        android:orderInCategory="100"
+        android:title="New Job"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/add_expense"
+        android:icon="@drawable/ic_red_euro"
+        android:orderInCategory="100"
+        android:title="New Expense"
+        app:showAsAction="always"/>
+    <item
+         android:id="@+id/add_shift"
+         android:icon="@drawable/ic_time"
+         android:orderInCategory="100"
+         android:title="New Shift"
+         app:showAsAction="always"/>
+
+</menu>

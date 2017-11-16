@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2014. Small-app.com
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top|center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/bg_gray"
+        android:gravity="top|center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal"
+            android:minHeight="45dp" >
+
+            <TextView
+                android:id="@+id/txtDateExpenseToUpdate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="25dp"
+                android:layout_weight="2"
+                android:text="458458"
+                android:textColor="@color/txt_color_gray"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btnPickDateExpenseToUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_kalendar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnExpenseNameToUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_gray"
+                android:singleLine="true"
+                android:text="@string/expense_prompt"
+                android:textAllCaps="false"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/radioPaymentTypeToUpdate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/cashExpenseToUpdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/cash"
+                    android:textColor="@color/txt_color_gray"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/cardExpenseToUpdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/card"
+                    android:textColor="@color/txt_color_gray"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/accExpenseToUpdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/acc"
+                    android:textColor="@color/txt_color_gray"
+                    android:textSize="18sp" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/separetor_05"
+                android:gravity="left"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/lblExpense"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1.5"
+                    android:gravity="bottom|left"
+                    android:text="@string/lblAmount"
+                    android:textColor="@color/txt_color_gray"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="€"
+                    android:textColor="#cccccc"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.4"
+                    android:orientation="vertical" >
+
+                    <EditText
+                        android:id="@+id/expenseAmountToUpdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_login_box_border"
+                        android:cursorVisible="false"
+                        android:gravity="left"
+                        android:imeOptions="actionDone"
+                        android:maxLength="6"
+                        android:textColor="@color/txt_color_gray"
+                        android:textSize="30sp" />
+
+                    <EditText
+                        android:id="@+id/expExpenseToUpdateBase"
+                        android:layout_width="fill_parent"
+                        android:layout_height="3dp"
+                        android:layout_marginBottom="3dp"
+                        android:background="@drawable/edittext_login_box_base"
+                        android:cursorVisible="false"
+                        android:enabled="false"
+                        android:inputType="none" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llOdoToUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/separetor_05"
+                android:gravity="left"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/lblOdometar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="3dp"
+                    android:layout_weight="1.7"
+                    android:gravity="bottom|left"
+                    android:text="@string/lblOdo"
+                    android:textColor="@color/txt_color_gray"
+                    android:textSize="25sp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1.4"
+                    android:orientation="vertical" >
+
+                    <EditText
+                        android:id="@+id/odoToUpdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="3dp"
+                        android:background="@drawable/edittext_login_box_border"
+                        android:cursorVisible="false"
+                        android:gravity="left"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:textColor="@color/txt_color_gray"
+                        android:textSize="30sp" />
+
+                    <EditText
+                        android:id="@+id/odoExpenseToUpdateBase"
+                        android:layout_width="fill_parent"
+                        android:layout_height="3dp"
+                        android:layout_marginBottom="3dp"
+                        android:background="@drawable/edittext_login_box_base"
+                        android:cursorVisible="false"
+                        android:enabled="false"
+                        android:inputType="none" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/notes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/separetor_05"
+                android:gravity="left"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/notesExpenseToUpdate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_login_box_border"
+                    android:hint="Note"
+                    android:imeOptions="actionGo"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textColor="@color/txt_color_gray"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/notesExpenseToUpdateBase"
+                    android:layout_width="fill_parent"
+                    android:layout_height="3dp"
+                    android:background="@drawable/edittext_login_box_base" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnSaveExpenseToUpdate"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="top"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_green"
+                android:text="SAVE"
+                android:textSize="21sp" />
+
+            <Button
+                android:id="@+id/btnCancelExpenseToUpdate"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="top"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_yellow"
+                android:text="CANCEL"
+                android:textSize="21sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,4 +1,5 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
@@ -11,101 +12,255 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="@dimen/fivedp"
-        android:weightSum="100"
-        android:orientation="vertical">
-
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:weightSum="100">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="6"
+            android:layout_weight="10"
+            android:gravity="center_vertical"
             android:orientation="horizontal">
 
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/prevDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/prev_day"
+                    app:srcCompat="@drawable/ic_chevron_left_black_24dp"/>
+            </LinearLayout>
 
             <TextView
-                android:layout_width="0dp"
+                android:id="@+id/txtTodayDate"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="50"
-                android:textSize="20sp"
-                android:text="Jobs"/>
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:text=""/>
 
-            <TextView
-                android:id="@+id/txtDayJobs"
+            <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:layout_weight="50"
-                android:text="0"/>
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/nextDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/next_day"
+                    app:srcCompat="@drawable/ic_chevron_right_black_24dp"/>
+            </LinearLayout>
+
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="6"
-            android:orientation="horizontal">
+            android:layout_weight="10"
+            android:orientation="horizontal"
+            android:weightSum="100">
 
-
-            <TextView
-                android:id="@+id/textView4"
+            <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:layout_weight="50"
-                android:text="Cash"/>
+                android:layout_height="match_parent"
+                android:layout_weight="33.3"
+                android:orientation="vertical"
+                android:weightSum="100">
 
-            <TextView
-                android:id="@+id/txtCash"
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="50"
+                    android:gravity="bottom|center_horizontal"
+                    android:text="@string/jobs"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/txtDayJobs"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="50"
+                    android:gravity="bottom|center_horizontal"
+                    android:text="@string/zero"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:layout_weight="50"
-                android:text="0.00"/>
+                android:layout_height="match_parent"
+                android:layout_weight="33.3"
+                android:orientation="vertical"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="50"
+                    android:gravity="bottom|center_horizontal"
+                    android:text="@string/miles"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/txtTodayMiles"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="50"
+                    android:gravity="bottom|center_horizontal"
+                    android:text="@string/zero"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="33.3"
+                android:orientation="vertical"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="50"
+                    android:gravity="bottom|center_horizontal"
+                    android:text="@string/hr"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/txtTodayHours"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="50"
+                    android:gravity="bottom|center_horizontal"
+                    android:text="@string/zero"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="6"
+            android:layout_weight="20"
             android:orientation="horizontal">
 
-
-            <TextView
+            <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:layout_weight="50"
-                android:text="Account"/>
+                android:layout_height="match_parent"
+                android:layout_weight="33.3"
+                android:orientation="vertical"
+                android:weightSum="100">
 
-            <TextView
-                android:id="@+id/txtAccount"
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="50"
+                    android:gravity="bottom|center"
+                    android:text="@string/cash"
+                    android:textColor="@color/colorDarkGreen"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/txtTodayCash"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="50"
+                    android:gravity="top|center"
+                    android:text="@string/zerozero"
+                    android:textColor="@color/colorDarkGreen"
+                    android:textSize="40sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:layout_weight="50"
-                android:text="0.00"/>
+                android:layout_height="match_parent"
+                android:layout_weight="33.3"
+                android:orientation="vertical"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="50"
+                    android:gravity="bottom|center_horizontal|center"
+                    android:text="@string/account"
+                    android:textColor="@color/colorDarkBlue"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/txtTodayAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="50"
+                    android:gravity="top|center"
+                    android:text="@string/zerozero"
+                    android:textColor="@color/colorDarkBlue"
+                    android:textSize="40sp"/>
+
+            </LinearLayout>
+
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="6"
+            android:layout_weight="20"
             android:orientation="horizontal">
 
-
-            <TextView
+            <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:layout_weight="50"
-                android:text="Expenses"/>
+                android:layout_height="match_parent"
+                android:layout_weight="33.3"
+                android:orientation="vertical"
+                android:weightSum="100">
 
-            <TextView
-                android:id="@+id/txtExpenses"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:layout_weight="50"
-                android:text="0.00"/>
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="50"
+                    android:gravity="bottom|center_horizontal|center"
+                    android:text="@string/expenses"
+                    android:textColor="@color/colorRed"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/txtTodayExpenses"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="50"
+                    android:gravity="bottom|center_horizontal"
+                    android:text="@string/zerozero"
+                    android:textColor="@color/colorRed"
+                    android:textSize="40sp"/>
+
+            </LinearLayout>
+
         </LinearLayout>
-
 
     </LinearLayout>
+
+
 </FrameLayout>
+
