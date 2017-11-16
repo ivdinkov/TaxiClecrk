@@ -1,0 +1,306 @@
+[
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_expenses.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\fragment_expenses.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_update_single_income_record.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\fragment_update_single_income_record.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "C:\\Users\\iv\\.android\\build-cache\\55fbfedb48cdb5e7ec79d007f5220c7708a790f6\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_about.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\fragment_about.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_update_single_expense_record_small.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\fragment_update_single_expense_record_small.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_single_msg.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\dialog_single_msg.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\report_full.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\report_full.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\frag_full_report.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\frag_full_report.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "C:\\Users\\iv\\.android\\build-cache\\55fbfedb48cdb5e7ec79d007f5220c7708a790f6\\output\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\no_income.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\no_income.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\hours_switch.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\hours_switch.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "C:\\Users\\iv\\.android\\build-cache\\55fbfedb48cdb5e7ec79d007f5220c7708a790f6\\output\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
+        "source": "C:\\Users\\iv\\.android\\build-cache\\55fbfedb48cdb5e7ec79d007f5220c7708a790f6\\output\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\lv_each_expense.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\lv_each_expense.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\by_expense_result.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\by_expense_result.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
+        "source": "C:\\Users\\iv\\.android\\build-cache\\55fbfedb48cdb5e7ec79d007f5220c7708a790f6\\output\\res\\layout\\abc_screen_content_include.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "C:\\Users\\iv\\.android\\build-cache\\55fbfedb48cdb5e7ec79d007f5220c7708a790f6\\output\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\report_by_date.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\report_by_date.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\terms_dialog.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\terms_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\frag_by_day.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\frag_by_day.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_hours.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\fragment_hours.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\no_expense.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\no_expense.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "C:\\Users\\iv\\.android\\build-cache\\55fbfedb48cdb5e7ec79d007f5220c7708a790f6\\output\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_settings_provider.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\fragment_settings_provider.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "C:\\Users\\iv\\.android\\build-cache\\55fbfedb48cdb5e7ec79d007f5220c7708a790f6\\output\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_include.xml",
+        "source": "C:\\Users\\iv\\.android\\build-cache\\55fbfedb48cdb5e7ec79d007f5220c7708a790f6\\output\\res\\layout\\abc_activity_chooser_view_include.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
+        "source": "C:\\Users\\iv\\.android\\build-cache\\55fbfedb48cdb5e7ec79d007f5220c7708a790f6\\output\\res\\layout\\abc_screen_simple.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_ad.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\fragment_ad.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\report_by_expense_type.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\report_by_expense_type.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\frag_by_year.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\frag_by_year.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_report.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\fragment_report.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\frag_by_day_small.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\frag_by_day_small.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "C:\\Users\\iv\\.android\\build-cache\\55fbfedb48cdb5e7ec79d007f5220c7708a790f6\\output\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "C:\\Users\\iv\\.android\\build-cache\\55fbfedb48cdb5e7ec79d007f5220c7708a790f6\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\pin_change.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\pin_change.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\frag_by_week.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\frag_by_week.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_empty.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\dialog_empty.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_income_small.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\fragment_income_small.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_simple_dropdown_hint.xml",
+        "source": "C:\\Users\\iv\\.android\\build-cache\\55fbfedb48cdb5e7ec79d007f5220c7708a790f6\\output\\res\\layout\\abc_simple_dropdown_hint.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
+        "source": "C:\\Users\\iv\\.android\\build-cache\\55fbfedb48cdb5e7ec79d007f5220c7708a790f6\\output\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_update_single_income_record_small.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\fragment_update_single_income_record_small.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "C:\\Users\\iv\\.android\\build-cache\\55fbfedb48cdb5e7ec79d007f5220c7708a790f6\\output\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_exp_update.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\fragment_exp_update.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "C:\\Users\\iv\\.android\\build-cache\\55fbfedb48cdb5e7ec79d007f5220c7708a790f6\\output\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "source": "C:\\Users\\iv\\.android\\build-cache\\55fbfedb48cdb5e7ec79d007f5220c7708a790f6\\output\\res\\layout\\abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_hours_update.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\fragment_hours_update.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\expense_switch.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\expense_switch.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\frag_by_week_small.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\frag_by_week_small.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_register.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\lv_each_income.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\lv_each_income.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "C:\\Users\\iv\\.android\\build-cache\\55fbfedb48cdb5e7ec79d007f5220c7708a790f6\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "C:\\Users\\iv\\.android\\build-cache\\55fbfedb48cdb5e7ec79d007f5220c7708a790f6\\output\\res\\layout\\abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\register_activity_step2.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\register_activity_step2.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_update_single_hours_record.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\fragment_update_single_hours_record.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_update_single_expense_record.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\fragment_update_single_expense_record.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\by_income_result.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\by_income_result.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
+        "source": "C:\\Users\\iv\\.android\\build-cache\\55fbfedb48cdb5e7ec79d007f5220c7708a790f6\\output\\res\\layout\\abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\frag_by_year_small.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\frag_by_year_small.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_income.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\fragment_income.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
+        "source": "C:\\Users\\iv\\.android\\build-cache\\55fbfedb48cdb5e7ec79d007f5220c7708a790f6\\output\\res\\layout\\abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\lv_each_hours.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\lv_each_hours.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\drawer_list_item.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\drawer_list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_expenses_small.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\fragment_expenses_small.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\income_switch.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\income_switch.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "C:\\Users\\iv\\.android\\build-cache\\55fbfedb48cdb5e7ec79d007f5220c7708a790f6\\output\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_inc_update.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\fragment_inc_update.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_navigation_drawer.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\fragment_navigation_drawer.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "C:\\Users\\iv\\.android\\build-cache\\55fbfedb48cdb5e7ec79d007f5220c7708a790f6\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
+        "source": "C:\\Users\\iv\\.android\\build-cache\\55fbfedb48cdb5e7ec79d007f5220c7708a790f6\\output\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_settings.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\fragment_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\no_hours.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\no_hours.xml"
+    },
+    {
+        "merged": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_t.xml",
+        "source": "C:\\Users\\iv\\Documents\\Android\\TC_old\\app\\src\\main\\res\\layout\\activity_t.xml"
+    }
+]

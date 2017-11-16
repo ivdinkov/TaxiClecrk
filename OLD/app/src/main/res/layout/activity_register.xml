@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2014. Small-app.com
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_gray" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/bg_gray"
+        android:orientation="vertical" >
+
+        <!-- Full name label -->
+        <!-- Full name -->
+
+        <EditText
+            android:id="@+id/registerName"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="35dp"
+            android:autoText="false"
+            android:background="@color/bg_gray"
+            android:hint="Your Name"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textColor="@color/txt_color_gray"
+            android:visibility="gone" />
+
+        <!-- Email label -->
+
+        <EditText
+            android:id="@+id/changeBase1"
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:layout_margin="0dp"
+            android:background="@drawable/edittext_login_box_base"
+            android:cursorVisible="false"
+            android:enabled="false"
+            android:inputType="none"
+            android:visibility="gone" />
+        <!-- Email -->
+
+        <EditText
+            android:id="@+id/registerEmail"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="15dp"
+            android:autoText="false"
+            android:background="@color/bg_gray"
+            android:hint="@string/your_email"
+            android:inputType="textEmailAddress"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textColor="@color/txt_color_gray" />
+
+        <!-- Pin label -->
+
+        <EditText
+            android:id="@+id/changeBase2"
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:layout_margin="0dp"
+            android:background="@drawable/edittext_login_box_base"
+            android:cursorVisible="false"
+            android:enabled="false"
+            android:inputType="none" />
+        <!-- PIN -->
+
+        <EditText
+            android:id="@+id/registerPin"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/bg_gray"
+            android:hint="@string/choose_pin"
+            android:inputType="number"
+            android:maxLength="5"
+            android:password="true"
+            android:textColor="@color/txt_color_gray" />
+
+        <EditText
+            android:id="@+id/changeBase3"
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:layout_margin="0dp"
+            android:background="@drawable/edittext_login_box_base"
+            android:cursorVisible="false"
+            android:enabled="false"
+            android:inputType="none"
+            android:textIsSelectable="false"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/checkbox_terms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/terms"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="I accept the terms and conditions"
+                android:textColor="@color/txt_color_gray"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/login_button"
+            android:text="@string/btnRegister_text"
+            android:textColor="@color/login_btn_text_color"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+</LinearLayout>

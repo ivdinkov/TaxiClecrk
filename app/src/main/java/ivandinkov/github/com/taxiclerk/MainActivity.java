@@ -346,7 +346,6 @@ public class MainActivity extends AppCompatActivity
 		savePrefs("shiftId", readShiftId());
 	}
 	
-	
 	private void savePrefs(String key, String value) {
 		SharedPreferences.Editor editor = sharedPreferences.edit();
 		editor.putString(key, value);

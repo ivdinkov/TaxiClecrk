@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2014. Small-app.com
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:gravity="top"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="right" >
+
+            <TextView
+                android:id="@+id/txtStartDateIncome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="Start"
+                android:textColor="@color/txt_color_gray"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnPickStartDateIncome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_kalendar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="right" >
+
+            <TextView
+                android:id="@+id/txtEndDateIncome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="End"
+                android:textColor="@color/txt_color_gray"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnPickEndDateIncome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_kalendar" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:gravity="left" >
+
+        <RadioGroup
+            android:id="@+id/radioProviderReport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/rbIncomeAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="All"
+                android:textColor="@color/txt_color_gray"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/rbStreetIncome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Street"
+                android:textColor="@color/txt_color_gray"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rbIncome2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="prov2"
+                android:textColor="@color/txt_color_gray"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/rbIncome3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="prov3"
+                android:textColor="@color/txt_color_gray"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnGenerateFullReport"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/btn_yellow"
+        android:text="@string/search"
+        android:textSize="18sp" />
+
+</LinearLayout>
